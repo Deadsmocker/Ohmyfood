@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon projet 3 OC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deadsmocker/Ohmyfood.git"
+  },
+  "author": "Matt NNZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deadsmocker/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Deadsmocker/Ohmyfood#readme",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
+}
