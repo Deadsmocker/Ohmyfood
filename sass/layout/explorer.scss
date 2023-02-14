@@ -1,4 +1,6 @@
 @use "../utils/box-shadow";
+@use "../utils/variables";
+
 
 .explorer {
     text-align: center;
@@ -15,7 +17,7 @@
         padding: 1rem 2rem;
         border: none;
         border-radius: 2rem;
-        background-image: linear-gradient(#FF79DA,#9356DC);
+        background-image: linear-gradient(variables.$bg-color-secondaire,variables.$bg-color-primaire);
         color: white;
         transition: all 250ms;
         margin-top: 1rem;
