@@ -1,8 +1,8 @@
-@import "./sass/base.scss";
-@import "./sass/layout/header.scss";
-@import "./sass/layout/city.scss";
-@import "./sass/layout/explorer.scss";
-@import "./sass/layout/tuto.scss";
+@use "./sass/base";
+@use "./sass/layout/header";
+@use "./sass/layout/city";
+@use "./sass/layout/explorer";
+@use "./sass/layout/tuto";
 
 
 
