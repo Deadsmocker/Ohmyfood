@@ -1,11 +1,8 @@
-@use "../utils/variables.scss";
+@use "../utils/variables";
 
 
 .menus {
     background-color: #f6f6f6;
-    h2 {
-        margin-bottom: 2rem;
-    }
     
     .menus__cards {
         display: grid;
@@ -14,13 +11,50 @@
         @media (max-width: variables.$breakpoint) {
             grid-template-columns: repeat(1, 1fr);
         }
+        .new {
+            position: relative;
+        }
+        .new::before {
+            content: "Nouveau";
+            position: absolute;
+            height: 2rem;
+            width: 5rem;
+            background-color: variables.$bg-color-tertiaire;
+            color: darken( variables.$bg-color-tertiaire, 50%);
+            display: grid;
+            place-items: center;
+            right: 1rem;
+            top: 1rem;
+        }
     }
 
     .card {
-        border: 1px solid black;
-        & .card_image {
-            background-image: url(../../assets/menu-1.jpg);
+        &__image {
             height: 15rem;
+            border-radius: 1rem 1rem 0 0;
+            background-size: cover;
+        }
+        @for $i from 1 through 4 {
+            &__image-#{$i} {
+                background-image: url(../../assets/img/menu-#{$i}.jpg);
+            }
+        }
+        &__description {
+            position: relative;
+            h3,
+            p {
+                margin: 0.5rem;
+            }
+            h3 {
+                padding-top: 0.5rem;
+            }
+            i {
+                font-size: 2rem;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     }
 }
