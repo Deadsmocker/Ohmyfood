@@ -3,6 +3,7 @@
 
 .menus {
     background-color: #f6f6f6;
+    margin-bottom: 2rem;
     
     .menus__cards {
         display: grid;
@@ -41,12 +42,11 @@
         }
         &__description {
             position: relative;
+            background-color: white;
+            border-radius: 0 0 1rem 1rem;
             h3,
             p {
-                margin: 0.5rem;
-            }
-            h3 {
-                padding-top: 0.5rem;
+                padding: 0.3rem;
             }
             i {
                 font-size: 2rem;
