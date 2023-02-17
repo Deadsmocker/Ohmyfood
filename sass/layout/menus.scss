@@ -1,4 +1,5 @@
 @use "../utils/variables";
+@use "../utils/mixins";
 
 
 .menus {
@@ -44,16 +45,23 @@
             position: relative;
             background-color: white;
             border-radius: 0 0 1rem 1rem;
+            &::before {
+                @include mixins.heart;
+            }
+            &::after {
+                @include mixins.heart;
+                @include mixins.gradient;
+                opacity: 0;
+                color: transparent;
+                font-weight: 900;
+            }
+            &:hover::after {
+                opacity: 1;
+                transform: translateY(-50%) scale(1.2);
+            }
             h3,
             p {
                 padding: 0.3rem;
-            }
-            i {
-                font-size: 2rem;
-                position: absolute;
-                right: 1rem;
-                top: 50%;
-                transform: translateY(-50%);
             }
         }
     }

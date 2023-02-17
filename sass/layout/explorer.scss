@@ -1,5 +1,6 @@
-@use "../utils/box-shadow";
+@use "../utils/mixins";
 @use "../utils/variables";
+
 
 
 .explorer {
@@ -16,11 +17,11 @@
         padding: 1rem 2rem;
         border: none;
         border-radius: 2rem;
-        background-image: linear-gradient(variables.$bg-color-secondaire,variables.$bg-color-primaire);
         color: white;
         transition: all 250ms;
         margin-top: 1rem;
-        @include box-shadow.base-shadow;
+        @include mixins.base-shadow;
+        @include mixins.gradient;
     }
     & button:hover {
         transform: scale(1.02);
