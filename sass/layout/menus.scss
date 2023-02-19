@@ -42,23 +42,9 @@
             }
         }
         &__description {
-            position: relative;
             background-color: white;
             border-radius: 0 0 1rem 1rem;
-            &::before {
-                @include mixins.heart;
-            }
-            &::after {
-                @include mixins.heart;
-                @include mixins.gradient;
-                opacity: 0;
-                color: transparent;
-                font-weight: 900;
-            }
-            &:hover::after {
-                opacity: 1;
-                transform: translateY(-50%) scale(1.2);
-            }
+            @include mixins.heart-animated;
             h3,
             p {
                 padding: 0.3rem;
