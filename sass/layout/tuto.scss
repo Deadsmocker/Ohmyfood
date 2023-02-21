@@ -5,9 +5,13 @@
 .tuto {
     counter-reset: steps;
     margin-bottom: 2rem;
+    h2{
+       margin-left: 1.5rem; 
+    }
     & ol {
         display: flex;
         gap: 2rem;
+        margin-right: 1rem;
         @media (max-width: 800px) {
             flex-direction: column;
         }
@@ -34,7 +38,7 @@
         padding: 1.5rem 2rem;
         flex-grow: 1;
         border-radius: variables.$tuto-bulles-height;
-        @include mixins.base-shadow;
+        @include mixins.box-shadow;
         &:hover {
             @include mixins.zoom;
         }
