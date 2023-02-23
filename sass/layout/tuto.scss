@@ -18,6 +18,9 @@
     }
     & li {
         position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
         &::before {
             content: counter(steps);
             counter-increment: steps;
@@ -41,6 +44,10 @@
         @include mixins.box-shadow;
         &:hover {
             @include mixins.zoom;
+            background-color: lighten(variables.$bg-color-primaire, 35%);
+            i::before {
+                color: variables.$bg-color-primaire;
+            }
         }
     & i.fas {
         margin-right: variables.$tuto-bulles-height;

@@ -6,7 +6,7 @@
         background-color: #f6f6f6;
         a,
         h2 {
-            margin: 2rem;
+            margin: 0.5rem 2rem;
         }
     
         .menus__cards {
@@ -36,12 +36,13 @@
         .card {
             &__image {
                 height: 15rem;
-             border-radius: 1rem 1rem 0 0;
+                border-radius: 1rem 1rem 0 0;
                 background-size: cover;
             }
             @for $i from 1 through 4 {
                 &__image-#{$i} {
                     background-image: url(../../assets/img/menu-#{$i}.jpg);
+                    background-position: center;
                 }
             }
             &__description {

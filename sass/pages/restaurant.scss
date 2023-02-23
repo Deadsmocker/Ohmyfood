@@ -27,9 +27,9 @@ body {
     .banner img {
         display: block;
         width: 100%;
-        height: 70vh;
+        height: 20vh;
         object-fit: cover;
-        object-position: center bottom;
+        object-position: center;
     }
     
     .resto__title {
@@ -114,12 +114,13 @@ body {
                     width: $button-width;
                     transition: margin-right 0.5s;
                     i {
+                        $size: 2rem;
                         display: grid;
                         place-items: center;
                         flex-shrink: 0;
                         background: white;
-                        aspect-ratio: 1;
-                        width: 2rem;
+                        height: $size;
+                        width: $size;
                         border-radius: 1rem;
                         color: variables.$bg-color-tertiaire;
                     }
@@ -138,7 +139,7 @@ body {
         }
     }
     section.order {
-        height: 40vh;
+        height: 10vh;
         display: grid;
         place-items: center;
         button {
